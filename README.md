@@ -44,7 +44,7 @@ A URL da imagem de fundo deve ser extraida da [API do Bing](https://www.bing.com
 - **/auth** [POST] - Endpoint responsável pela autorização da aplicação, é necessário adicionar a chave `x-app-id` com  `[APP_ID]` 
 - **/users** [GET] - Endpoint responsável por retornar todos os users.
 - **/users/id** [GET] - Endpoint responsável por retornar o perfil do user.
-- **/users/id/activities** [GET] - Endpoint responsável por retornar o perfil do user.
+- **/users/id/activities** [GET] - Endpoint responsável por retornar as atividades do usuário.
 - **/programs/id** [GET]- Endpoint responsável por retornar todos os programs.
 - **/programs/id/levels** [GET]- Endpoint responsável por retornar todos os programs.
 - **/levels/id** [GET]- Endpoint responsável por retornar todos os programs.
