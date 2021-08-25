@@ -3,7 +3,7 @@
 //
 import { Container, Grid } from '@material-ui/core';
 import PageWrap from '../components/PageWrap';
-import Header from "../components/Header";
+import Header from '../components/Header';
 import Content from '../components/Content';
 import WhiteBox from '../components/WhiteBox';
 import ContentBox from '../components/ContentBox';
@@ -27,13 +27,11 @@ const Home = ({ users, globalProps }) => {
         </Content>
       </PageWrap>
     </>
-  )
-}
+  );
+};
 
 Home.getInitialProps = async ({ isServer }) => {
-
   try {
-
     // Auth
     const reqAuth = await Api.getAuth();
     const token = reqAuth.data.token;
@@ -43,13 +41,12 @@ Home.getInitialProps = async ({ isServer }) => {
     const data = response.data ? response.data : [];
     const users = getUserListSelector(data);
 
-    return { isServer, users }
-
+    return { isServer, users };
   } catch (error) {
-    console.error(`Error: ${error}`)
+    console.error(`Error: ${error}`);
   }
 
-  return { isServer }
-}
+  return { isServer };
+};
 
 export default Home;
