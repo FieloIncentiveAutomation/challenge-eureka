@@ -1,10 +1,3 @@
-// module.exports = {
-//   reactStrictMode: true,
-//   images: {
-//     domains: ['pixinvent.com'],
-//   },
-// }
-
 const withCSS = require('@zeit/next-css');
 const webpack = require('webpack');
 
